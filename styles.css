@@ -105,6 +105,28 @@ img {
   margin-bottom: 20px;
 }
 
+/* testimonials */
+
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
 /* container */
 
 .container {
@@ -206,7 +228,21 @@ img {
   color: white;
 }
 
+.bg-dark-gray {
+  background: var(--dark-gray);
+  color: white;
+}
+
 .bg-black {
   background: black;
   color: white;
+}
+
+/* card */
+
+.card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
 }
