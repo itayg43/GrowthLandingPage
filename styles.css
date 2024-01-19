@@ -89,6 +89,22 @@ img {
   margin-bottom: 20px;
 }
 
+/* video */
+
+.video {
+  padding: 10px 0 40px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-preview {
+  margin-bottom: 20px;
+}
+
 /* container */
 
 .container {
@@ -176,4 +192,21 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+/* background */
+
+.bg-blue {
+  background: var(--light-blue);
+  color: white;
+}
+
+.bg-gray {
+  background: var(--light-gray);
+  color: white;
+}
+
+.bg-black {
+  background: black;
+  color: white;
 }
