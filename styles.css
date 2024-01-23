@@ -16,6 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -438,8 +439,11 @@ img {
   transition: 0.3s;
 }
 
-/* @media (max-width: 960px) {
-} */
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
 
 @media (max-width: 670px) {
   header .navbar .menu {
@@ -449,7 +453,60 @@ img {
   header .navbar .hamburger-button {
     display: block;
   }
+
+  .hero .container {
+    background: url(./assets/hero-bg-mobile.png) no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
 }
 
-/* @media (max-width: 500px) {
-} */
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+}
